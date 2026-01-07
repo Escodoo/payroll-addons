@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <!-- Button and extra tab on payslip form -->
+  <record id="view_hr_payslip_form_inherit_report" model="ir.ui.view">
+    <field name="name">hr.payslip.form.inherit.report</field>
+    <field name="model">hr.payslip</field>
+    <field name="inherit_id" ref="payroll.hr_payslip_view_form" />
+    <field name="arch" type="xml">
+      <xpath expr="//header" position="inside">
+        <button
+                    name="%(action_hr_payslip_report_template_wizard)d"
+                    string="Print Payslip"
+                    type="action"
+                    class="oe_highlight"
+                    context="{'default_payslip_id': id}"
+                    attrs="{'invisible': [('state', '!=', 'done')]}"
+                />
+      </xpath>
+      <xpath expr="//page[@name='accounting']" position="after">
+        <page string="Signed Payslips" name="signed_payslips">
+          <field
+                        name="signed_document_ids"
+                        nolabel="1"
+                        context="{'default_payslip_id': id}"
+                    >
+            <tree create="1" delete="1">
+              <field name="name" />
+              <field name="template_id" />
+              <field name="date_signed" />
+              <field name="attachment_filename" />
+            </tree>
+            <form string="Signed Payslip Document">
+              <sheet>
+                <group>
+                  <group>
+                    <field name="name" />
+                    <field name="payslip_id" readonly="1" />
+                    <field name="template_id" options="{'no_create': True}" />
+                    <field name="date_signed" />
+                  </group>
+                  <group>
+                    <field name="attachment" filename="attachment_filename" />
+                    <field name="attachment_filename" invisible="1" />
+                    <field
+                                            name="notes"
+                                            placeholder="Additional notes about this signed document..."
+                                        />
+                  </group>
+                </group>
+              </sheet>
+            </form>
+          </field>
+        </page>
+      </xpath>
+    </field>
+  </record>
+</odoo>
