@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record
+        id="hr_payslip_attendance_report_template_default"
+        model="hr.payslip.attendance.report.template"
+    >
+    <field name="name">Default Attendance Template</field>
+    <field name="active">True</field>
+    <field
+            name="report_template_id"
+            eval="ref('payroll_attendance_report.report_payslip_attendance_br')"
+        />
+    <field name="description">Default template for printing attendance sheets.</field>
+  </record>
+</odoo>
