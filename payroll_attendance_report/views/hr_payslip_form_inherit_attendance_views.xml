@@ -11,7 +11,7 @@
                     string="Print Attendance"
                     type="action"
                     context="{'default_payslip_id': id}"
-                    attrs="{'invisible': [('state', '!=', 'done')]}"
+                    attrs="{'invisible': [('state', 'not in', ('verify', 'done'))]}"
                 />
       </xpath>
     </field>

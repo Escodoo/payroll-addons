@@ -10,12 +10,9 @@
           <t t-set="contract" t-value="payslip.contract_id" />
           <t
                         t-set="date_from"
-                        t-value="o._context.get('attendance_date_from') or payslip.date_from"
+                        t-value="payslip.attendance_date_from or payslip.date_from"
                     />
-          <t
-                        t-set="date_to"
-                        t-value="o._context.get('attendance_date_to') or payslip.date_to"
-                    />
+          <t t-set="date_to" t-value="payslip.attendance_date_to or payslip.date_to" />
           <t
                         t-set="attendances"
                         t-value="payslip._get_attendances_for_period(date_from, date_to)"

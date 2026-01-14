@@ -4,7 +4,7 @@
         id="hr_payslip_attendance_report_template_default"
         model="hr.payslip.attendance.report.template"
     >
-    <field name="name">Default Attendance Template</field>
+    <field name="name">Modelo de Presença Padrão</field>
     <field name="active">True</field>
     <field
             name="report_template_id"

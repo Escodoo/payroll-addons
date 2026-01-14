@@ -21,34 +21,43 @@ class HrPayslipAttendanceReportTemplateWizard(models.TransientModel):
     )
     date_from = fields.Date(
         string="Start Date",
-        related="payslip_id.date_from",
-        readonly=True,
-        store=False,
+        required=True,
     )
+
     date_to = fields.Date(
         string="End Date",
-        related="payslip_id.date_to",
-        readonly=True,
-        store=False,
+        required=True,
     )
 
     @api.model
     def default_get(self, fields_list):
         res = super().default_get(fields_list)
-        if "payslip_id" in fields_list and not res.get("payslip_id"):
-            payslip_id = self.env.context.get(
-                "default_payslip_id"
-            ) or self.env.context.get("active_id")
-            if payslip_id:
-                res["payslip_id"] = payslip_id
+
+        payslip_id = self.env.context.get("default_payslip_id") or self.env.context.get(
+            "active_id"
+        )
+
+        if payslip_id:
+            payslip = self.env["hr.payslip"].browse(payslip_id)
+
+            if "payslip_id" in fields_list:
+                res["payslip_id"] = payslip.id
+
+            if "date_from" in fields_list:
+                res["date_from"] = payslip.date_from
+
+            if "date_to" in fields_list:
+                res["date_to"] = payslip.date_to
+
         if "template_id" in fields_list and not res.get("template_id"):
-            first_template = self.env["hr.payslip.attendance.report.template"].search(
+            template = self.env["hr.payslip.attendance.report.template"].search(
                 [("active", "=", True)],
                 limit=1,
                 order="id",
             )
-            if first_template:
-                res["template_id"] = first_template.id
+            if template:
+                res["template_id"] = template.id
+
         return res
 
     def action_print(self):
@@ -83,8 +92,8 @@ class HrPayslipAttendanceReportTemplateWizard(models.TransientModel):
             }
         )
 
-        result = temp_report.with_context(
-            attendance_date_from=self.date_from,
-            attendance_date_to=self.date_to,
-        ).report_action(self.payslip_id)
+        self.payslip_id.attendance_date_from = self.date_from
+        self.payslip_id.attendance_date_to = self.date_to
+
+        result = temp_report.report_action(self.payslip_id)
         return result
