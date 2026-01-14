@@ -13,7 +13,7 @@
                     type="action"
                     class="oe_highlight"
                     context="{'default_payslip_id': id}"
-                    attrs="{'invisible': [('state', '!=', 'done')]}"
+                    attrs="{'invisible': [('state', 'not in', ('verify', 'done'))]}"
                 />
       </xpath>
       <xpath expr="//page[@name='accounting']" position="after">
