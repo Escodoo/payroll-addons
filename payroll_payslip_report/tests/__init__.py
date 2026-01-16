@@ -1,0 +1,2 @@
+from . import test_hr_payslip_run_report_template
+from . import test_hr_payslip_run_report_template_wizard

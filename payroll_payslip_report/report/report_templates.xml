@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <template id="report_payslip_run_conference">
+    <t t-call="web.html_container">
+      <t t-foreach="docs" t-as="run">
+        <t t-call="web.external_layout">
+          <t t-set="o" t-value="run" />
+          <t t-set="company" t-value="run.company_id" />
+          <t t-set="data" t-value="run._get_conference_data()" />
+          <t t-set="lines" t-value="data['lines']" />
+
+          <div class="page">
+            <h2 class="text-center">FOLHA DE PAGAMENTO</h2>
+
+            <p style="margin-bottom: 4px;">
+              <strong>Lote:</strong>
+              <t t-esc="run.name" />
+            </p>
+            <p style="margin-bottom: 8px;">
+              <strong>Período:</strong>
+              <t t-esc="run.date_start or ''" />
+              -
+              <t t-esc="run.date_end or ''" />
+            </p>
+
+            <div style="font-size: 12px;">
+            <table class="table table-sm table-bordered" style="margin-bottom: 0;">
+              <thead>
+                <tr>
+                  <th>FUNCIONÁRIO</th>
+                  <th>CPF</th>
+                  <th>BANCO</th>
+                  <th>AGÊNCIA</th>
+                  <th>DV-AG</th>
+                  <th>CONTA</th>
+                  <th>DV-CC</th>
+                  <th>TOT. PROVENTOS</th>
+                  <th>DESCONTOS</th>
+                  <th>TOT. LÍQUIDO</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr t-foreach="lines" t-as="l">
+                  <td>
+                    <t t-esc="l['employee'].name" />
+                  </td>
+                  <td>
+                    <t t-esc="l['cpf']" />
+                  </td>
+                  <td>
+                    <t t-esc="l['bank_name']" />
+                  </td>
+                  <td>
+                    <t t-esc="l['agency']" />
+                  </td>
+                  <td>
+                    <t t-esc="l['agency_dv']" />
+                  </td>
+                  <td>
+                    <t t-esc="l['account']" />
+                  </td>
+                  <td>
+                    <t t-esc="l['account_dv']" />
+                  </td>
+                  <td class="text-right">
+                    <span
+                                                t-esc="l['gross']"
+                                                t-options="{'widget': 'monetary', 'display_currency': data['currency']}"
+                                            />
+                  </td>
+                  <td class="text-right">
+                    <span
+                                                t-esc="abs(l['deductions'])"
+                                                t-options="{'widget': 'monetary', 'display_currency': data['currency']}"
+                                            />
+                  </td>
+                  <td class="text-right">
+                    <span
+                                                t-esc="l['net']"
+                                                t-options="{'widget': 'monetary', 'display_currency': data['currency']}"
+                                            />
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colspan="7" class="text-right">Totals:</th>
+                  <th class="text-right">
+                    <span
+                                                t-esc="data['total_gross']"
+                                                t-options="{'widget': 'monetary', 'display_currency': data['currency']}"
+                                            />
+                  </th>
+                  <th class="text-right">
+                    <span
+                                                t-esc="abs(data['total_deduction'])"
+                                                t-options="{'widget': 'monetary', 'display_currency': data['currency']}"
+                                            />
+                  </th>
+                  <th class="text-right">
+                    <span
+                                                t-esc="data['total_net']"
+                                                t-options="{'widget': 'monetary', 'display_currency': data['currency']}"
+                                            />
+                  </th>
+                </tr>
+              </tfoot>
+            </table>
+            </div>
+          </div>
+        </t>
+      </t>
+    </t>
+  </template>
+</odoo>

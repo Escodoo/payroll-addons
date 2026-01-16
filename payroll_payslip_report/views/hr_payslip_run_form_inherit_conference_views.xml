@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="view_hr_payslip_run_form_inherit_conference" model="ir.ui.view">
+    <field name="name">hr.payslip.run.form.inherit.payslip_batch_report</field>
+    <field name="model">hr.payslip.run</field>
+    <field name="inherit_id" ref="payroll.hr_payslip_run_view_form" />
+    <field name="arch" type="xml">
+      <xpath expr="//header" position="inside">
+        <button
+                    name="%(action_hr_payslip_run_report_template_wizard)d"
+                    string="Imprimir Lote de Holerite"
+                    type="action"
+                    class="oe_highlight"
+                />
+      </xpath>
+    </field>
+  </record>
+</odoo>

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_payslip_run_report_template_user,hr.payslip.run.report.template.user,payroll_payslip_report.model_hr_payslip_run_report_template,base.group_user,1,0,0,0
+access_hr_payslip_run_report_template_manager,hr.payslip.run.report.template.manager,payroll_payslip_report.model_hr_payslip_run_report_template,payroll.group_payroll_manager,1,1,1,1
+access_hr_payslip_run_report_template_wizard,hr.payslip.run.report.template.wizard,payroll_payslip_report.model_hr_payslip_run_report_template_wizard,base.group_user,1,1,1,1

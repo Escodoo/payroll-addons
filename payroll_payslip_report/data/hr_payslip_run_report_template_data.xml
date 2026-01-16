@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record
+        id="hr_payslip_run_report_template_default"
+        model="hr.payslip.run.report.template"
+    >
+    <field name="name">Template Folha de pagamento</field>
+    <field name="active">True</field>
+    <field
+            name="report_template_id"
+            eval="ref('payroll_payslip_report.report_payslip_run_conference')"
+        />
+    <field name="description">
+      Default template for printing payslip batch conference reports.
+    </field>
+  </record>
+</odoo>
