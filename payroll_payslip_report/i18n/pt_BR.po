@@ -1,0 +1,327 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* payroll_payslip_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-16 14:06+0000\n"
+"PO-Revision-Date: 2026-01-16 14:06+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: pt_BR\n"
+
+#. module: payroll_payslip_report
+#: model:ir.actions.report,print_report_name:payroll_payslip_report.action_report_payslip_run_conference
+msgid ""
+"\n"
+"      'Payslip Batch Conference - %s' % (object.name or '')\n"
+"    "
+msgstr ""
+"\n"
+"      'Conferência Lote de Holerites - %s' % (object.name or '')\n"
+"    "
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_form
+msgid "<code>company</code> : company (<code>res.company</code>)"
+msgstr "<code>company</code> : empresa (<code>res.company</code>)"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_form
+msgid ""
+"<code>data</code> : result of\n"
+"                    <code>run._get_conference_data()</code> (dict)"
+msgstr ""
+"<code>data</code> : resultado de\n"
+"                    <code>run._get_conference_data()</code> (dicionário)"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_form
+msgid ""
+"<code>lines</code> : list of dictionaries with employee,\n"
+"                    bank and financial information"
+msgstr ""
+"<code>lines</code> : lista de dicionários com informações do funcionário,\n"
+"                    bancárias e financeiras"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_form
+msgid "<code>o</code> : alias for <code>run</code>"
+msgstr "<code>o</code> : atalho para <code>run</code>"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_form
+msgid ""
+"<code>run</code> : current payslip batch\n"
+"                    (<code>hr.payslip.run</code>)"
+msgstr ""
+"<code>run</code> : lote de holerites atual\n"
+"                    (<code>hr.payslip.run</code>)"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.report_payslip_run_conference
+msgid "<strong>Lote:</strong>"
+msgstr "<strong>Lote:</strong>"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.report_payslip_run_conference
+msgid "<strong>Período:</strong>"
+msgstr "<strong>Período:</strong>"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.report_payslip_run_conference
+msgid "AGÊNCIA"
+msgstr "AGÊNCIA"
+
+#. module: payroll_payslip_report
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template__active
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_search
+msgid "Active"
+msgstr "Ativo"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_form
+msgid "Available variables in conference templates (QWeb)"
+msgstr "Variáveis disponíveis nos templates de conferência (QWeb)"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.report_payslip_run_conference
+msgid "BANCO"
+msgstr "BANCO"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.report_payslip_run_conference
+msgid "CONTA"
+msgstr "CONTA"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.report_payslip_run_conference
+msgid "CPF"
+msgstr "CPF"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_wizard_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.actions.act_window,help:payroll_payslip_report.action_hr_payslip_run_report_template
+msgid "Create your first payslip batch conference template!"
+msgstr "Crie o seu primeiro modelo de conferência de lote de holerites!"
+
+#. module: payroll_payslip_report
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template__create_uid
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template_wizard__create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: payroll_payslip_report
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template__create_date
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template_wizard__create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.report_payslip_run_conference
+msgid "DESCONTOS"
+msgstr "DESCONTOS"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.report_payslip_run_conference
+msgid "DV-AG"
+msgstr "DV-AG"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.report_payslip_run_conference
+msgid "DV-CC"
+msgstr "DV-CC"
+
+#. module: payroll_payslip_report
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template__description
+msgid "Description"
+msgstr "Descrição"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_form
+msgid "Description of this template..."
+msgstr "Descrição deste template..."
+
+#. module: payroll_payslip_report
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template__display_name
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template_wizard__display_name
+msgid "Display Name"
+msgstr "Nome exibido"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_form
+msgid "Duplicate"
+msgstr "Duplicar"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.report_payslip_run_conference
+msgid "FOLHA DE PAGAMENTO"
+msgstr "FOLHA DE PAGAMENTO"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.report_payslip_run_conference
+msgid "FUNCIONÁRIO"
+msgstr "FUNCIONÁRIO"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_form
+msgid "Help (QWeb)"
+msgstr "Ajuda (QWeb)"
+
+#. module: payroll_payslip_report
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template__id
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_form
+msgid ""
+"In a QWeb template you can write any HTML code using QWeb\n"
+"                  expressions."
+msgstr ""
+"Em um template QWeb você pode escrever qualquer código HTML usando\n"
+"                  expressões QWeb."
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_search
+msgid "Inactive"
+msgstr "Inativo"
+
+#. module: payroll_payslip_report
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template____last_update
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template_wizard____last_update
+msgid "Last Modified on"
+msgstr "Última modificação em"
+
+#. module: payroll_payslip_report
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template__write_uid
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Última atualização por"
+
+#. module: payroll_payslip_report
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template__write_date
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template_wizard__write_date
+msgid "Last Updated on"
+msgstr "Última atualização em"
+
+#. module: payroll_payslip_report
+#. odoo-python
+#: code:addons/payroll_payslip_report/models/hr_payslip_run_report_template.py:0
+#, python-format
+msgid "No report template associated with this template."
+msgstr "Nenhum template de relatório associado a este modelo."
+
+#. module: payroll_payslip_report
+#. odoo-python
+#: code:addons/payroll_payslip_report/models/hr_payslip_run_report_template.py:0
+#, python-format
+msgid "Original report action not found for this template."
+msgstr "A ação de relatório original não foi encontrada para este modelo."
+
+#. module: payroll_payslip_report
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template_wizard__payslip_run_id
+msgid "Payslip Batch"
+msgstr "Lote de holerites"
+
+#. module: payroll_payslip_report
+#: model:ir.actions.report,name:payroll_payslip_report.action_report_payslip_run_conference
+msgid "Payslip Batch Conference"
+msgstr "Conferência de Lote de Holerites"
+
+#. module: payroll_payslip_report
+#. odoo-python
+#: code:addons/payroll_payslip_report/models/hr_payslip_run_report_template.py:0
+#: model:ir.model,name:payroll_payslip_report.model_hr_payslip_run_report_template
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_form
+#, python-format
+msgid "Payslip Batch Conference Template"
+msgstr "Modelo de Conferência de Lote de Holerites"
+
+#. module: payroll_payslip_report
+#: model:ir.model,name:payroll_payslip_report.model_hr_payslip_run_report_template_wizard
+msgid "Payslip Batch Conference Template Selection Wizard"
+msgstr "Assistente de Seleção de Modelo de Conferência de Lote"
+
+#. module: payroll_payslip_report
+#: model:ir.actions.act_window,name:payroll_payslip_report.action_hr_payslip_run_report_template
+#: model:ir.ui.menu,name:payroll_payslip_report.menu_hr_payslip_run_report_template_root
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_search
+msgid "Payslip Batch Templates"
+msgstr "Modelos de Lote de Holerites"
+
+#. module: payroll_payslip_report
+#: model:ir.model,name:payroll_payslip_report.model_hr_payslip_run
+msgid "Payslip Batches"
+msgstr "Lotes de Holerites"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_wizard_form
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_form_inherit_conference
+msgid "Print Conference"
+msgstr "Imprimir Conferência"
+
+#. module: payroll_payslip_report
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template__report_template_id
+msgid "Report Template"
+msgstr "Template de Relatório"
+
+#. module: payroll_payslip_report
+#: model:ir.actions.act_window,name:payroll_payslip_report.action_hr_payslip_run_report_template_wizard
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_wizard_form
+msgid "Select Batch Template"
+msgstr "Selecionar Modelo de Lote"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.report_payslip_run_conference
+msgid "TOT. LÍQUIDO"
+msgstr "TOT. LÍQUIDO"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.report_payslip_run_conference
+msgid "TOT. PROVENTOS"
+msgstr "TOT. PROVENTOS"
+
+#. module: payroll_payslip_report
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template_wizard__template_id
+msgid "Template"
+msgstr "Modelo"
+
+#. module: payroll_payslip_report
+#: model:ir.model.fields,field_description:payroll_payslip_report.field_hr_payslip_run_report_template__name
+msgid "Template Name"
+msgstr "Nome do Modelo"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.view_hr_payslip_run_report_template_form
+msgid "The following objects and variables are available:"
+msgstr "Os seguintes objetos e variáveis estão disponíveis:"
+
+#. module: payroll_payslip_report
+#: model_terms:ir.actions.act_window,help:payroll_payslip_report.action_hr_payslip_run_report_template
+msgid ""
+"These templates define the layout of the batch conference report\n"
+"        (employees, bank data and financial totals)."
+msgstr ""
+"Esses modelos definem o layout do relatório de conferência por lote\n"
+"        (funcionários, dados bancários e totais financeiros)."
+
+#. module: payroll_payslip_report
+#: model_terms:ir.ui.view,arch_db:payroll_payslip_report.report_payslip_run_conference
+msgid "Totals:"
+msgstr "Totais:"
