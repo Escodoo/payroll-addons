@@ -1,6 +1,5 @@
 # Copyright 2025 - TODAY, Cristiano Mafra Junior <cristiano.mafra@escodoo.com.br>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
-from odoo.exceptions import UserError
 from odoo.tests.common import TransactionCase
 
 
@@ -91,8 +90,11 @@ class TestHrPayslipAttendanceReportTemplate(TransactionCase):
             }
         )
 
-        with self.assertRaises(UserError):
-            template_no_report.action_duplicate()
+        result = template_no_report.action_duplicate()
+
+        self.assertIsInstance(result, dict)
+        self.assertEqual(result["type"], "ir.actions.act_window")
+        self.assertEqual(result["res_model"], "hr.payslip.attendance.report.template")
 
     def test_template_active_toggle(self):
         self.assertTrue(self.template.active)

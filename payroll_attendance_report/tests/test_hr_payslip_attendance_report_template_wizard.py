@@ -45,9 +45,11 @@ class TestHrPayslipAttendanceReportTemplateWizard(TransactionCase):
         )
 
     def test_wizard_creation(self):
-        wizard = self.env["hr.payslip.attendance.report.template.wizard"].create(
+        Wizard = self.env["hr.payslip.attendance.report.template.wizard"].with_context(
+            default_payslip_id=self.payslip.id
+        )
+        wizard = Wizard.create(
             {
-                "payslip_id": self.payslip.id,
                 "template_id": self.template.id,
             }
         )
@@ -83,9 +85,11 @@ class TestHrPayslipAttendanceReportTemplateWizard(TransactionCase):
         self.assertEqual(defaults["payslip_id"], self.payslip.id)
 
     def test_wizard_dates_follow_payslip_period(self):
-        wizard = self.env["hr.payslip.attendance.report.template.wizard"].create(
+        Wizard = self.env["hr.payslip.attendance.report.template.wizard"].with_context(
+            default_payslip_id=self.payslip.id
+        )
+        wizard = Wizard.create(
             {
-                "payslip_id": self.payslip.id,
                 "template_id": self.template.id,
             }
         )
@@ -94,9 +98,11 @@ class TestHrPayslipAttendanceReportTemplateWizard(TransactionCase):
         self.assertEqual(wizard.date_to, self.payslip.date_to)
 
     def test_wizard_action_print(self):
-        wizard = self.env["hr.payslip.attendance.report.template.wizard"].create(
+        Wizard = self.env["hr.payslip.attendance.report.template.wizard"].with_context(
+            default_payslip_id=self.payslip.id
+        )
+        wizard = Wizard.create(
             {
-                "payslip_id": self.payslip.id,
                 "template_id": self.template.id,
             }
         )
