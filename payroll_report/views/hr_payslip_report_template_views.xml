@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <!-- Actions and views for payslip templates -->
+  <record id="action_hr_payslip_report_template" model="ir.actions.act_window">
+    <field name="name">Payslip Templates</field>
+    <field name="res_model">hr.payslip.report.template</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">
+        Create your first payslip template!
+      </p>
+      <p>
+        Templates allow you to customize the appearance and content of payslips
+        when printing.
+      </p>
+    </field>
+  </record>
+
+  <record id="view_hr_payslip_report_template_tree" model="ir.ui.view">
+    <field name="name">hr.payslip.report.template.tree</field>
+    <field name="model">hr.payslip.report.template</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name" />
+        <field name="active" widget="boolean_toggle" />
+      </tree>
+    </field>
+  </record>
+
+  <record id="view_hr_payslip_report_template_form" model="ir.ui.view">
+    <field name="name">hr.payslip.report.template.form</field>
+    <field name="model">hr.payslip.report.template</field>
+    <field name="arch" type="xml">
+      <form string="Payslip Template">
+        <header>
+          <button
+                        name="action_duplicate"
+                        string="Duplicate"
+                        type="object"
+                        class="oe_highlight"
+                    />
+        </header>
+        <sheet>
+          <group>
+            <group>
+              <field name="name" />
+              <field name="active" />
+            </group>
+            <group>
+              <field name="report_template_id" />
+            </group>
+          </group>
+          <group>
+            <field name="description" placeholder="Descrição deste modelo..." />
+          </group>
+          <notebook>
+            <page string="Ajuda (QWeb)" name="help">
+              <div style="margin-top: 4px;">
+                <h3>Available variables in payslip templates (QWeb)</h3>
+                <p>
+                  In a QWeb template you can write any HTML code using QWeb
+                  expressions.
+                </p>
+                <p>
+                  The following objects and variables are available in the
+                  templates:
+                </p>
+                <ul>
+                  <li>
+                    <code>payslip</code> : current payslip (<code>hr.payslip</code>)
+                  </li>
+                  <li>
+                    <code>employee</code> : employee (<code>hr.employee</code>)
+                  </li>
+                  <li>
+                    <code>company</code> : company (<code>res.company</code>)
+                  </li>
+                  <li>
+                    <code>contract</code> : contract (<code>hr.contract</code>)
+                  </li>
+                  <li>
+                    <code>bank</code> : employee bank account
+                    (<code>res.partner.bank</code>)
+                  </li>
+                  <li>
+                    <code>o</code> : alias for payslip (<code>hr.payslip</code>)
+                  </li>
+                </ul>
+                <h3>Common payslip fields (payslip)</h3>
+                <ul>
+                  <li><code>payslip.name</code> - Payslip description</li>
+                  <li><code>payslip.date_from</code> / <code
+                                        >payslip.date_to</code> - Period</li>
+                  <li><code>payslip.employee_id</code> - Employee</li>
+                  <li><code>payslip.contract_id</code> - Contract</li>
+                  <li><code>payslip.company_id</code> - Company</li>
+                  <li><code>payslip.line_ids</code> - Computed lines</li>
+                </ul>
+                <h3>Common employee fields (employee)</h3>
+                <ul>
+                  <li><code>employee.name</code> - Full name</li>
+                  <li><code
+                                        >employee.identification_id</code> - Identification number</li>
+                  <li><code>employee.address_home_id</code> - Home address</li>
+                  <li><code>employee.bank_account_id</code> - Bank account</li>
+                </ul>
+              </div>
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_hr_payslip_report_template_search" model="ir.ui.view">
+    <field name="name">hr.payslip.report.template.search</field>
+    <field name="model">hr.payslip.report.template</field>
+    <field name="arch" type="xml">
+      <search string="Payslip Templates">
+        <field name="name" />
+        <filter string="Active" name="active" domain="[('active', '=', True)]" />
+        <filter string="Inactive" name="inactive" domain="[('active', '=', False)]" />
+      </search>
+    </field>
+  </record>
+
+  <!-- Configuration menu -->
+  <menuitem
+        id="menu_hr_payslip_report_template_root"
+        name="Payslip Templates"
+        parent="payroll.payroll_menu_configuration"
+        action="action_hr_payslip_report_template"
+        sequence="60"
+    />
+</odoo>

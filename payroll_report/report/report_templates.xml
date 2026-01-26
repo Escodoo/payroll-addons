@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <!-- Base template for Payslip (Holerite) -->
+  <template id="report_payslip_br">
+    <t t-call="web.html_container">
+      <t t-foreach="docs" t-as="payslip">
+        <t t-call="web.external_layout">
+          <t t-set="o" t-value="payslip" />
+          <t t-set="company" t-value="payslip.company_id" />
+          <t t-set="employee" t-value="payslip.employee_id" />
+          <t t-set="contract" t-value="payslip.contract_id" />
+          <t t-set="bank" t-value="payslip.employee_id.bank_account_id" />
+
+          <div class="page">
+            <h3 class="text-center">Payslip</h3>
+
+            <p>
+              <strong>Company:</strong>
+              <t t-esc="company.name" />
+            </p>
+            <p>
+              <strong>Employee:</strong>
+              <t t-esc="employee.name" />
+            </p>
+
+            <p>
+              <strong>Period:</strong>
+              <span t-field="payslip.date_from" t-options="{'widget':'date'}" />
+              -
+              <span t-field="payslip.date_to" t-options="{'widget':'date'}" />
+            </p>
+
+            <table class="table table-sm table-bordered">
+              <thead>
+                <tr>
+                  <th>Code</th>
+                  <th>Description</th>
+                  <th>Quantity/Rate</th>
+                  <th>Amount</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                                    t-foreach="payslip.line_ids.filtered(lambda l: l.appears_on_payslip and l.amount != 0)"
+                                    t-as="line"
+                                >
+                  <td><t t-esc="line.code" /></td>
+                  <td><t t-esc="line.name" /></td>
+                  <td><t t-esc="line.quantity" /></td>
+                  <td>
+                    <span
+                                            t-esc="line.amount"
+                                            t-options="{'widget': 'monetary', 'display_currency': payslip.company_id.currency_id}"
+                                        />
+                  </td>
+                  <td>
+                    <span
+                                            t-esc="line.total"
+                                            t-options="{'widget': 'monetary', 'display_currency': payslip.company_id.currency_id}"
+                                        />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p class="text-right" style="margin-top: 40px;">
+              <strong>Authorized signature</strong>
+            </p>
+          </div>
+        </t>
+      </t>
+    </t>
+  </template>
+</odoo>

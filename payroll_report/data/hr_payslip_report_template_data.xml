@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="hr_payslip_report_template_default" model="hr.payslip.report.template">
+    <field name="name">Modelo Padrão de Holerite</field>
+    <field name="active">True</field>
+    <field name="report_template_id" eval="ref('payroll_report.report_payslip_br')" />
+    <field name="description">Default template for printing payslips.</field>
+  </record>
+</odoo>
