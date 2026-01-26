@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <template id="report_payslip_attendance_br">
+    <t t-call="web.html_container">
+      <t t-foreach="docs" t-as="payslip">
+        <t t-call="web.external_layout">
+          <t t-set="o" t-value="payslip" />
+          <t t-set="company" t-value="payslip.company_id" />
+          <t t-set="employee" t-value="payslip.employee_id" />
+          <t t-set="contract" t-value="payslip.contract_id" />
+          <t
+                        t-set="date_from"
+                        t-value="payslip.attendance_date_from or payslip.date_from"
+                    />
+          <t t-set="date_to" t-value="payslip.attendance_date_to or payslip.date_to" />
+          <t
+                        t-set="attendances"
+                        t-value="payslip._get_attendances_for_period(date_from, date_to)"
+                    />
+
+          <div class="page">
+            <h3 class="text-center">Attendance Sheet</h3>
+
+            <p>
+              <strong>Company:</strong>
+              <t t-esc="company.name" />
+            </p>
+            <p>
+              <strong>Employee:</strong>
+              <t t-esc="employee.name" />
+            </p>
+            <p>
+              <strong>Period:</strong>
+              <span t-esc="date_from" />
+              -
+              <span t-esc="date_to" />
+            </p>
+
+            <table class="table table-sm table-bordered">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Check In</th>
+                  <th>Check Out</th>
+                  <th>Worked Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr t-foreach="attendances" t-as="att">
+                  <td>
+                    <span t-field="att.check_in" t-options="{'widget': 'date'}" />
+                  </td>
+                  <td>
+                    <span t-field="att.check_in" t-options="{'widget': 'datetime'}" />
+                  </td>
+                  <td>
+                    <span t-field="att.check_out" t-options="{'widget': 'datetime'}" />
+                  </td>
+                  <td>
+                    <t t-esc="att.worked_hours" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </t>
+      </t>
+    </t>
+  </template>
+</odoo>

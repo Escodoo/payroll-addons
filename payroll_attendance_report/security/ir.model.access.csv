@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_payslip_attendance_report_template_user,hr.payslip.attendance.report.template.user,payroll_attendance_report.model_hr_payslip_attendance_report_template,base.group_user,1,0,0,0
+access_hr_payslip_attendance_report_template_manager,hr.payslip.attendance.report.template.manager,payroll_attendance_report.model_hr_payslip_attendance_report_template,payroll.group_payroll_manager,1,1,1,1
+access_hr_payslip_attendance_report_template_wizard,hr.payslip.attendance.report.template.wizard,payroll_attendance_report.model_hr_payslip_attendance_report_template_wizard,base.group_user,1,1,1,1

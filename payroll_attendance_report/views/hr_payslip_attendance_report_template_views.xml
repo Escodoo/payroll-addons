@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record
+        id="action_hr_payslip_attendance_report_template"
+        model="ir.actions.act_window"
+    >
+    <field name="name">Attendance Templates</field>
+    <field name="res_model">hr.payslip.attendance.report.template</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">
+        Create your first attendance template!
+      </p>
+      <p>
+        Attendance templates allow you to customize the appearance and content
+        of attendance sheets for payslips.
+      </p>
+    </field>
+  </record>
+
+  <record id="view_hr_payslip_attendance_report_template_tree" model="ir.ui.view">
+    <field name="name">hr.payslip.attendance.report.template.tree</field>
+    <field name="model">hr.payslip.attendance.report.template</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name" />
+        <field name="active" widget="boolean_toggle" />
+      </tree>
+    </field>
+  </record>
+
+  <record id="view_hr_payslip_attendance_report_template_form" model="ir.ui.view">
+    <field name="name">hr.payslip.attendance.report.template.form</field>
+    <field name="model">hr.payslip.attendance.report.template</field>
+    <field name="arch" type="xml">
+      <form string="Attendance Template">
+        <header>
+          <button
+                        name="action_duplicate"
+                        string="Duplicate"
+                        type="object"
+                        class="oe_highlight"
+                    />
+        </header>
+        <sheet>
+          <group>
+            <group>
+              <field name="name" />
+              <field name="active" />
+            </group>
+            <group>
+              <field name="report_template_id" />
+            </group>
+          </group>
+          <group>
+            <field name="description" placeholder="Description of this template..." />
+          </group>
+          <notebook>
+            <page string="Help (QWeb)" name="help">
+              <div style="margin-top: 4px;">
+                <h3>Available variables in attendance templates (QWeb)</h3>
+                <p>
+                  In a QWeb template you can write any HTML code using QWeb expressions.
+                </p>
+                <p>
+                  The following objects and variables are available in the templates:
+                </p>
+                <ul>
+                  <li>
+                    <code>payslip</code> : current payslip (<code>hr.payslip</code>)
+                  </li>
+                  <li>
+                    <code>employee</code> : employee (<code>hr.employee</code>)
+                  </li>
+                  <li>
+                    <code>company</code> : company (<code>res.company</code>)
+                  </li>
+                  <li>
+                    <code>contract</code> : contract (<code>hr.contract</code>)
+                  </li>
+                  <li>
+                    <code>date_from</code> : start date of the attendance interval
+                  </li>
+                  <li>
+                    <code>date_to</code> : end date of the attendance interval
+                  </li>
+                  <li>
+                    <code>attendances</code> : list of <code
+                                        >hr.attendance</code> records
+                    for the employee between <code>date_from</code> and
+                    <code>date_to</code>
+                  </li>
+                  <li>
+                    <code>o</code> : alias for payslip (<code>hr.payslip</code>)
+                  </li>
+                </ul>
+              </div>
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_hr_payslip_attendance_report_template_search" model="ir.ui.view">
+    <field name="name">hr.payslip.attendance.report.template.search</field>
+    <field name="model">hr.payslip.attendance.report.template</field>
+    <field name="arch" type="xml">
+      <search string="Attendance Templates">
+        <field name="name" />
+        <filter string="Active" name="active" domain="[('active', '=', True)]" />
+        <filter string="Inactive" name="inactive" domain="[('active', '=', False)]" />
+      </search>
+    </field>
+  </record>
+
+  <menuitem
+        id="menu_hr_payslip_attendance_report_template_root"
+        name="Attendance Templates"
+        parent="payroll.payroll_menu_configuration"
+        action="action_hr_payslip_attendance_report_template"
+        sequence="65"
+    />
+</odoo>
