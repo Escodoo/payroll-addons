@@ -6,15 +6,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-09 11:45+0000\n"
-"PO-Revision-Date: 2026-01-09 11:45+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
 
 #. module: payroll_attendance_report
 #: model:ir.actions.report,print_report_name:payroll_attendance_report.action_report_payslip_attendance_br
@@ -23,9 +20,6 @@ msgid ""
 "      'Attendance - %s' % (object.employee_id.name)\n"
 "    "
 msgstr ""
-"\n"
-"      'Controle de Presença - %s' % (object.employee_id.name)\n"
-"    "
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_form
@@ -34,83 +28,78 @@ msgid ""
 "                    for the employee between <code>date_from</code> and\n"
 "                    <code>date_to</code>"
 msgstr ""
-"<code>attendances</code> : lista de registros <code>hr.attendance</code>\n"
-"                    do funcionário entre <code>date_from</code> e\n"
-"                    <code>date_to</code>"
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_form
 msgid "<code>company</code> : company (<code>res.company</code>)"
-msgstr "<code>company</code> : empresa (<code>res.company</code>)"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_form
 msgid "<code>contract</code> : contract (<code>hr.contract</code>)"
-msgstr "<code>contract</code> : contrato (<code>hr.contract</code>)"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_form
 msgid "<code>date_from</code> : start date of the attendance interval"
-msgstr "<code>date_from</code> : data inicial do intervalo de presença"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_form
 msgid "<code>date_to</code> : end date of the attendance interval"
-msgstr "<code>date_to</code> : data final do intervalo de presença"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_form
 msgid "<code>employee</code> : employee (<code>hr.employee</code>)"
-msgstr "<code>employee</code> : funcionário (<code>hr.employee</code>)"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_form
 msgid "<code>o</code> : alias for payslip (<code>hr.payslip</code>)"
-msgstr "<code>o</code> : atalho para o holerite (<code>hr.payslip</code>)"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_form
 msgid "<code>payslip</code> : current payslip (<code>hr.payslip</code>)"
-msgstr "<code>payslip</code> : holerite atual (<code>hr.payslip</code>)"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.report_payslip_attendance_br
 msgid "<strong>Company:</strong>"
-msgstr "<strong>Empresa:</strong>"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.report_payslip_attendance_br
 msgid "<strong>Employee:</strong>"
-msgstr "<strong>Funcionário:</strong>"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.report_payslip_attendance_br
 msgid "<strong>Period:</strong>"
-msgstr "<strong>Período:</strong>"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template__active
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_search
 msgid "Active"
-msgstr "Ativo"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip__attendance_date_to
-#, fuzzy
 msgid "Attendance End Date"
-msgstr "Modelo de Ponto"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.actions.report,name:payroll_attendance_report.action_report_payslip_attendance_br
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.report_payslip_attendance_br
 msgid "Attendance Sheet"
-msgstr "Folha de Ponto"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip__attendance_date_from
-#, fuzzy
 msgid "Attendance Start Date"
-msgstr "Folha de Ponto"
+msgstr ""
 
 #. module: payroll_attendance_report
 #. odoo-python
@@ -118,14 +107,14 @@ msgstr "Folha de Ponto"
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_form
 #, python-format
 msgid "Attendance Template"
-msgstr "Modelo de Ponto"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.actions.act_window,name:payroll_attendance_report.action_hr_payslip_attendance_report_template
 #: model:ir.ui.menu,name:payroll_attendance_report.menu_hr_payslip_attendance_report_template_root
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_search
 msgid "Attendance Templates"
-msgstr "Modelos de Ponto"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.actions.act_window,help:payroll_attendance_report.action_hr_payslip_attendance_report_template
@@ -133,189 +122,186 @@ msgid ""
 "Attendance templates allow you to customize the appearance and content\n"
 "        of attendance sheets for payslips."
 msgstr ""
-"Os modelos de ponto permitem personalizar a aparência e o conteúdo das\n"
-"        folhas de ponto dos holerites."
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_form
 msgid "Available variables in attendance templates (QWeb)"
-msgstr "Variáveis disponíveis nos templates de ponto (QWeb)"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_wizard_form
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.report_payslip_attendance_br
 msgid "Check In"
-msgstr "Entrada"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.report_payslip_attendance_br
 msgid "Check Out"
-msgstr "Saída"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.actions.act_window,help:payroll_attendance_report.action_hr_payslip_attendance_report_template
 msgid "Create your first attendance template!"
-msgstr "Crie o seu primeiro modelo de ponto!"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template__create_uid
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template_wizard__create_uid
 msgid "Created by"
-msgstr "Criado por"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template__create_date
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template_wizard__create_date
 msgid "Created on"
-msgstr "Criado em"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.report_payslip_attendance_br
 msgid "Date"
-msgstr "Data"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template__description
 msgid "Description"
-msgstr "Descrição"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_form
 msgid "Description of this template..."
-msgstr "Descrição deste template..."
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template__display_name
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template_wizard__display_name
 msgid "Display Name"
-msgstr "Nome exibido"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_form
 msgid "Duplicate"
-msgstr "Duplicar"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template_wizard__date_to
 msgid "End Date"
-msgstr "Data Final"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_form
 msgid "Help (QWeb)"
-msgstr "Ajuda (QWeb)"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template__id
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template_wizard__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_form
 msgid "In a QWeb template you can write any HTML code using QWeb expressions."
 msgstr ""
-"Em um template QWeb você pode escrever qualquer HTML usando expressões QWeb."
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_search
 msgid "Inactive"
-msgstr "Inativo"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template____last_update
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template_wizard____last_update
 msgid "Last Modified on"
-msgstr "Última modificação em"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template__write_uid
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template_wizard__write_uid
 msgid "Last Updated by"
-msgstr "Última atualização por"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template__write_date
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template_wizard__write_date
 msgid "Last Updated on"
-msgstr "Última atualização em"
+msgstr ""
 
 #. module: payroll_attendance_report
 #. odoo-python
 #: code:addons/payroll_attendance_report/models/hr_payslip_attendance_report_template.py:0
 #, python-format
 msgid "No report template associated with this template."
-msgstr "Nenhum template de relatório associado a este modelo."
+msgstr ""
 
 #. module: payroll_attendance_report
 #. odoo-python
 #: code:addons/payroll_attendance_report/models/hr_payslip_attendance_report_template.py:0
 #, python-format
 msgid "Original report action not found for this template."
-msgstr "A ação de relatório original não foi encontrada para este modelo."
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model,name:payroll_attendance_report.model_hr_payslip
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template_wizard__payslip_id
 msgid "Payslip"
-msgstr "Holerite"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model,name:payroll_attendance_report.model_hr_payslip_attendance_report_template
 msgid "Payslip Attendance Report Template"
-msgstr "Modelo de Relatório de Ponto de Holerite"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model,name:payroll_attendance_report.model_hr_payslip_attendance_report_template_wizard
 msgid "Payslip Attendance Template Selection Wizard"
-msgstr "Assistente de Seleção de Modelo de Ponto de Holerite"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_wizard_form
 msgid "Print"
-msgstr "Imprimir"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_form_inherit_attendance
 msgid "Print Attendance"
-msgstr "Imprimir Ponto"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template__report_template_id
 msgid "Report Template"
-msgstr "Template de Relatório"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.actions.act_window,name:payroll_attendance_report.action_hr_payslip_attendance_report_template_wizard
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_wizard_form
 msgid "Select Attendance Template"
-msgstr "Selecionar Modelo de Ponto"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template_wizard__date_from
 msgid "Start Date"
-msgstr "Data Inicial"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template_wizard__template_id
 msgid "Template"
-msgstr "Modelo"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model:ir.model.fields,field_description:payroll_attendance_report.field_hr_payslip_attendance_report_template__name
 msgid "Template Name"
-msgstr "Nome do Modelo"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.view_hr_payslip_attendance_report_template_form
 msgid "The following objects and variables are available in the templates:"
-msgstr "Os seguintes objetos e variáveis estão disponíveis nos templates:"
+msgstr ""
 
 #. module: payroll_attendance_report
 #: model_terms:ir.ui.view,arch_db:payroll_attendance_report.report_payslip_attendance_br
 msgid "Worked Hours"
-msgstr "Horas Trabalhadas"
+msgstr ""
