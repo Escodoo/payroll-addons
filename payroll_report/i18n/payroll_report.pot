@@ -6,15 +6,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-08 13:18+0000\n"
-"PO-Revision-Date: 2026-01-08 13:18+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
@@ -22,219 +19,216 @@ msgid ""
 "<code>bank</code> : employee bank account\n"
 "                    (<code>res.partner.bank</code>)"
 msgstr ""
-"<code>bank</code> : conta bancária do funcionário\n"
-"                    (<code>res.partner.bank</code>)"
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "<code>company</code> : company (<code>res.company</code>)"
-msgstr "<code>company</code> : empresa (<code>res.company</code>)"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "<code>contract</code> : contract (<code>hr.contract</code>)"
-msgstr "<code>contract</code> : contrato (<code>hr.contract</code>)"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "<code>employee.address_home_id</code> - Home address"
-msgstr "<code>employee.address_home_id</code> - Endereço residencial"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "<code>employee.bank_account_id</code> - Bank account"
-msgstr "<code>employee.bank_account_id</code> - Conta bancária"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "<code>employee.identification_id</code> - Identification number"
-msgstr "<code>employee.identification_id</code> - Número de identificação"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "<code>employee.name</code> - Full name"
-msgstr "<code>employee.name</code> - Nome completo"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "<code>employee</code> : employee (<code>hr.employee</code>)"
-msgstr "<code>employee</code> : funcionário (<code>hr.employee</code>)"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "<code>o</code> : alias for payslip (<code>hr.payslip</code>)"
-msgstr "<code>o</code> : atalho para o holerite (<code>hr.payslip</code>)"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "<code>payslip.company_id</code> - Company"
-msgstr "<code>payslip.company_id</code> - Empresa"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "<code>payslip.contract_id</code> - Contract"
-msgstr "<code>payslip.contract_id</code> - Contrato"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "<code>payslip.date_from</code> / <code>payslip.date_to</code> - Period"
 msgstr ""
-"<code>payslip.date_from</code> / <code>payslip.date_to</code> - Período"
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "<code>payslip.employee_id</code> - Employee"
-msgstr "<code>payslip.employee_id</code> - Funcionário"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "<code>payslip.line_ids</code> - Computed lines"
-msgstr "<code>payslip.line_ids</code> - Linhas calculadas"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "<code>payslip.name</code> - Payslip description"
-msgstr "<code>payslip.name</code> - Descrição do holerite"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "<code>payslip</code> : current payslip (<code>hr.payslip</code>)"
-msgstr "<code>payslip</code> : holerite atual (<code>hr.payslip</code>)"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.report_payslip_br
 msgid "<strong>Authorized signature</strong>"
-msgstr "<strong>Assinatura autorizada</strong>"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.report_payslip_br
 msgid "<strong>Company:</strong>"
-msgstr "<strong>Empresa:</strong>"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.report_payslip_br
 msgid "<strong>Employee:</strong>"
-msgstr "<strong>Funcionário:</strong>"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.report_payslip_br
 msgid "<strong>Period:</strong>"
-msgstr "<strong>Período:</strong>"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template__active
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_search
 msgid "Active"
-msgstr "Ativo"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_form_inherit_report
 msgid "Additional notes about this signed document..."
-msgstr "Notas adicionais sobre este documento assinado..."
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "Ajuda (QWeb)"
-msgstr "Ajuda (QWeb)"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.report_payslip_br
 msgid "Amount"
-msgstr "Valor"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "Available variables in payslip templates (QWeb)"
-msgstr "Variáveis disponíveis nos templates de holerite (QWeb)"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_wizard_form
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.report_payslip_br
 msgid "Code"
-msgstr "Código"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "Common employee fields (employee)"
-msgstr "Campos comuns do funcionário (employee)"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "Common payslip fields (payslip)"
-msgstr "Campos comuns do holerite (payslip)"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.actions.act_window,help:payroll_report.action_hr_payslip_report_template
 msgid "Create your first payslip template!"
-msgstr "Crie o seu primeiro modelo de holerite!"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template__create_uid
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template_wizard__create_uid
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_signed_document__create_uid
 msgid "Created by"
-msgstr "Criado por"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template__create_date
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template_wizard__create_date
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_signed_document__create_date
 msgid "Created on"
-msgstr "Criado em"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_signed_document__date_signed
 msgid "Date Signed"
-msgstr "Data de Assinatura"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,help:payroll_report.field_hr_payslip_signed_document__date_signed
 msgid "Date when the payslip was signed"
-msgstr "Data em que o holerite foi assinado"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template__description
 #: model_terms:ir.ui.view,arch_db:payroll_report.report_payslip_br
 msgid "Description"
-msgstr "Descrição"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "Descrição deste modelo..."
-msgstr "Descrição deste modelo..."
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template__display_name
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template_wizard__display_name
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_signed_document__display_name
 msgid "Display Name"
-msgstr "Nome exibido"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_signed_document__name
 msgid "Document Name"
-msgstr "Nome do Documento"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 msgid "Duplicate"
-msgstr "Duplicar"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_signed_document__attachment_filename
 msgid "Filename"
-msgstr "Nome do arquivo"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template__id
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template_wizard__id
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_signed_document__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
@@ -242,63 +236,61 @@ msgid ""
 "In a QWeb template you can write any HTML code using QWeb\n"
 "                  expressions."
 msgstr ""
-"Em um template QWeb você pode escrever qualquer código HTML usando\n"
-"                  expressões QWeb."
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_search
 msgid "Inactive"
-msgstr "Inativo"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template____last_update
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template_wizard____last_update
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_signed_document____last_update
 msgid "Last Modified on"
-msgstr "Última modificação em"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip__last_payslip_template_id
 msgid "Last Payslip Template"
-msgstr "Último modelo de holerite"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template__write_uid
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template_wizard__write_uid
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_signed_document__write_uid
 msgid "Last Updated by"
-msgstr "Última atualização por"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template__write_date
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template_wizard__write_date
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_signed_document__write_date
 msgid "Last Updated on"
-msgstr "Última atualização em"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,help:payroll_report.field_hr_payslip__last_payslip_template_id
 msgid "Last template used to print this payslip."
-msgstr "Último modelo utilizado para imprimir este holerite."
+msgstr ""
 
 #. module: payroll_report
 #. odoo-python
 #: code:addons/payroll_report/models/hr_payslip_report_template.py:0
 #, python-format
 msgid "No report template associated with this template."
-msgstr "Nenhum template de relatório associado a este modelo."
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_signed_document__notes
 msgid "Notes"
-msgstr "Notas"
+msgstr ""
 
 #. module: payroll_report
 #. odoo-python
 #: code:addons/payroll_report/models/hr_payslip_report_template.py:0
 #, python-format
 msgid "Original report action not found for this template."
-msgstr "A ação de relatório original não foi encontrada para este modelo."
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model,name:payroll_report.model_hr_payslip
@@ -306,12 +298,12 @@ msgstr "A ação de relatório original não foi encontrada para este modelo."
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_signed_document__payslip_id
 #: model_terms:ir.ui.view,arch_db:payroll_report.report_payslip_br
 msgid "Payslip"
-msgstr "Holerite"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model,name:payroll_report.model_hr_payslip_report_template
 msgid "Payslip Report Template"
-msgstr "Modelo de Relatório de Holerite"
+msgstr ""
 
 #. module: payroll_report
 #. odoo-python
@@ -319,86 +311,86 @@ msgstr "Modelo de Relatório de Holerite"
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
 #, python-format
 msgid "Payslip Template"
-msgstr "Modelo de Holerite"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model,name:payroll_report.model_hr_payslip_report_template_wizard
 msgid "Payslip Template Selection Wizard"
-msgstr "Assistente de Seleção de Modelo de Holerite"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.actions.act_window,name:payroll_report.action_hr_payslip_report_template
 #: model:ir.ui.menu,name:payroll_report.menu_hr_payslip_report_template_root
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_search
 msgid "Payslip Templates"
-msgstr "Modelos de Holerite"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_wizard_form
 msgid "Print"
-msgstr "Imprimir"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_form_inherit_report
 msgid "Print Payslip"
-msgstr "Imprimir Holerite"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.report_payslip_br
 msgid "Quantity/Rate"
-msgstr "Quantidade/Taxa"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template__report_template_id
 msgid "Report Template"
-msgstr "Template de Relatório"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.actions.act_window,name:payroll_report.action_hr_payslip_report_template_wizard
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_wizard_form
 msgid "Select Payslip Template"
-msgstr "Selecionar Modelo de Holerite"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_signed_document__attachment
 msgid "Signed Document"
-msgstr "Documento Assinado"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip__signed_document_ids
 msgid "Signed Documents"
-msgstr "Documentos Assinados"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model,name:payroll_report.model_hr_payslip_signed_document
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_form_inherit_report
 msgid "Signed Payslip Document"
-msgstr "Documento de Holerite Assinado"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_form_inherit_report
 msgid "Signed Payslips"
-msgstr "Holerites Assinados"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template_wizard__template_id
 msgid "Template"
-msgstr "Modelo"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_report_template__name
 msgid "Template Name"
-msgstr "Nome do Modelo"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,field_description:payroll_report.field_hr_payslip_signed_document__template_id
 msgid "Template Used"
-msgstr "Modelo Utilizado"
+msgstr ""
 
 #. module: payroll_report
 #: model:ir.model.fields,help:payroll_report.field_hr_payslip_signed_document__template_id
 msgid "Template that was used to generate this signed document"
-msgstr "Modelo que foi utilizado para gerar este documento assinado"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.actions.act_window,help:payroll_report.action_hr_payslip_report_template
@@ -406,8 +398,6 @@ msgid ""
 "Templates allow you to customize the appearance and content of payslips\n"
 "        when printing."
 msgstr ""
-"Os modelos permitem personalizar a aparência e o conteúdo dos holerites\n"
-"        na impressão."
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.view_hr_payslip_report_template_form
@@ -415,27 +405,13 @@ msgid ""
 "The following objects and variables are available in the\n"
 "                  templates:"
 msgstr ""
-"Os seguintes objetos e variáveis estão disponíveis nos\n"
-"                  templates:"
 
 #. module: payroll_report
 #: model:ir.model.fields,help:payroll_report.field_hr_payslip_signed_document__attachment
 msgid "The signed payslip document file"
-msgstr "Arquivo do holerite assinado"
+msgstr ""
 
 #. module: payroll_report
 #: model_terms:ir.ui.view,arch_db:payroll_report.report_payslip_br
 msgid "Total"
-msgstr "Total"
-
-#~ msgid ""
-#~ "\n"
-#~ "            'Recibo de Vencimento - %s' % (object.employee_id.name)\n"
-#~ "        "
-#~ msgstr ""
-#~ "\n"
-#~ "            'Recibo de Vencimento - %s' % (object.employee_id.name)\n"
-#~ "        "
-
-#~ msgid "Holerite - Default Payslip Template (Copy)"
-#~ msgstr "Holerite - Modelo de Holerite Padrão (Cópia)"
+msgstr ""
