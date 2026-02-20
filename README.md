@@ -17,7 +17,13 @@ Odoo Payroll Addons
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[payroll_attendance_report](payroll_attendance_report/) | 16.0.1.0.0 |  | Custom attendance (timesheet) reports for payslips with template selection
+[payroll_payslip_report](payroll_payslip_report/) | 16.0.1.0.0 |  | Payslip batch report with bank and financial data
+[payroll_report](payroll_report/) | 16.0.1.0.0 |  | Payslip Reports
 
 [//]: # (end addons)
 
