@@ -2,7 +2,8 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 {
     "name": "Payroll Attendance Report",
-    "summary": "Custom attendance (timesheet) reports for payslips with template selection",
+    "summary": """Custom attendance (timesheet) reports for
+    payslips with template selection""",
     "version": "16.0.1.0.0",
     "author": "Escodoo",
     "website": "https://github.com/Escodoo/payroll-addons",
