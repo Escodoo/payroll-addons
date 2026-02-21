@@ -1,5 +1,5 @@
 # Do NOT update manually; changes here will be overwritten by Copier
-_commit: v1.35
+_commit: v1.37
 _src_path: gh:oca/oca-addons-repo-template
 ci: GitHub
 convert_readme_fragments_to_markdown: false
@@ -17,10 +17,10 @@ odoo_version: 16.0
 org_name: Escodoo
 org_slug: Escodoo
 rebel_module_groups: []
-repo_description: Odoo Payroll Addons
-repo_name: Odoo Payroll Addons
-repo_slug: payroll-addons
-repo_website: https://github.com/Escodoo/payroll-addons
+repo_description: Custom Addons Repository for Client-specific Solution.
+repo_name: Escodoo Custom Addons
+repo_slug: escodoo-addons
+repo_website: https://github.com/Escodoo/escodoo-addons
 use_pyproject_toml: false
 use_ruff: false
 

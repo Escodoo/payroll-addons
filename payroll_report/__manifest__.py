@@ -5,7 +5,7 @@
     "summary": "Payslip Reports",
     "version": "16.0.1.0.0",
     "author": "Escodoo",
-    "website": "https://github.com/Escodoo/payroll-addons",
+    "website": "https://github.com/Escodoo/escodoo-addons",
     "license": "AGPL-3",
     "depends": [
         "payroll",
